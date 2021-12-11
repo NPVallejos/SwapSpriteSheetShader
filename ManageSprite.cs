@@ -7,7 +7,6 @@ public class ManageSprite : MonoBehaviour
     [Tooltip("Place Player sprite sheets here.")]
     public List<Texture2D> PlayerSpriteSheets;
     private SpriteRenderer m_spriteRenderer;
-    private Shader _swapShader;
 
     void Awake()
     {
