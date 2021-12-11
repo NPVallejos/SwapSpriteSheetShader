@@ -20,16 +20,23 @@
 8. This will also create an AnimationClip, name it whatever you want
 9. Setup your animations in the Animator tab in unity
 
+# Creating the material
+1. At the top of Unity, click "Assets">"Create">"Material"
+2. Name this Material PlayerMaterial.mat
+3. Click on the Material and go to Inspector
+4. Click on "Shader" dropdown menu, choose "Unlit">"PlayerShader"
+5. Set the Current SpriteSheet to your players main sprite sheet for now
+
 # Using my material + shader to allow for easy sprite swapping
 1. Drag PlayerMaterial.mat onto your player game object
 2. Click on the Player gameobject in your scene
 3. In the Inspector, scroll down to the PlayerMaterial tab and click on the dropdown arrow
-4. Set the Main SpriteSheet texture to your players base spritesheet
-5. Set the Current SpriteSheet texture to your players base spritesheet as well
+5. Set the Current SpriteSheet texture to your players main spritesheet
 6. Now, add ManageSprite.cs to the Player gameobject
-7. In the Inspector, inside ManageSprite (Script), add your characters main spritesheet to the PlayerSpriteSheets list.
-8. Add as many alternate character spritesheets to this list!
-9. Now edit ManageSprite.cs Update() code to change your characters current spritesheet to any spritesheets from your PlayerSpriteSheets list! This will let you change your characters appearance in game without having to create new animation clips, thus allowing you to reuse your animation clips!
+7. Click on Player gameobject
+8. In the Inspector, inside the ManageSprite (Script) component, add your characters main spritesheet to the PlayerSpriteSheets list.
+9. Add as many alternate character spritesheets to this list!
+10. Now edit ManageSprite.cs Update() code to change your characters current spritesheet to any spritesheets from your PlayerSpriteSheets list! This will let you change your characters appearance in game without having to create new animation clips, thus allowing you to reuse your players main animation clips!
 
 # Feedback is welcome!
 I am no shader expert. I basically looked at the unity docs, figured out how to make an unlit shader and then parsed their unlit/transparent shader to figure out how to make the texture transparent. Seems to be working just fine so far, but please report any bugs.
