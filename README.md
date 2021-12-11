@@ -15,9 +15,10 @@
 3. Add the Sprite Renderer component
 4. Add the Animator component
 5. Create your animation clips by selecting sprites from the players main spritesheet and drag them onto the player
-6. This will create an AnimatorController, name it PlayerAnimator
-7. This will also create an AnimationClip, name it whatever you want
-8. Setup your animations in the Animator tab in unity
+6. This will create an AnimatorController, name it "PlayerAnimatorController"
+7. In the Player>Animator component, set the Controller to "PlayerAnimatorController"
+8. This will also create an AnimationClip, name it whatever you want
+9. Setup your animations in the Animator tab in unity
 
 # Using my material + shader to allow for easy sprite swapping
 1. Drag PlayerMaterial.mat onto your player game object
